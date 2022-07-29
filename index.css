@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #5CDB95;
+}
+
+.App{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    
+}
+
+.Calculator  
+{
+    width: 100%;
+    max-width: 400px;
+    background-color: #EDF5E1;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 2px 64px #05386B;
+    
+}
+
+.display
+{
+   padding: 16px;
+   background-color: #05386B;
+   color: #EDF5E1;
+   text-align: right;
+   font-size: 24px;
+   font-weight: 300;
+}
+
+.display span
+{
+    color: #EDF5E1;
+    font-size: 16px;
+}
+
+button
+{
+    border: none;
+    appearance: none;
+    color: #5CDB95;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 16px;
+}
+
+button :hover {
+    opacity: 0.9;
+}
+.operators
+{
+    display: flex;
+}
+
+.operators button {
+    flex: 1 1 0%;
+    background-color: #3de288;
+    font-weight: 700;
+    color: #EDF5E1;
+}
+
+.digits
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.digits button
+{
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: #05386B;
+}
